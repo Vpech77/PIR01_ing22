@@ -1,0 +1,12 @@
+type;temps;posLatLon;posPix;NOcorner;center;nivZoom
+zoomstart;{"min":0,"sec":1,"mili":435};null;null;LatLng(55.883736, -4.309301);LatLng(55.871699, -4.287844);14
+movestart;{"min":0,"sec":1,"mili":435};null;null;LatLng(55.883736, -4.309301);LatLng(55.871699, -4.287844);null
+Using trackpad
+zoom;{"min":0,"sec":1,"mili":764};null;null;LatLng(55.881762, -4.295397);LatLng(55.875744, -4.284668);15
+zoomend;{"min":0,"sec":1,"mili":764};null;null;LatLng(55.881762, -4.295397);LatLng(55.875744, -4.284668);15
+moveend;{"min":0,"sec":1,"mili":764};null;null;LatLng(55.881762, -4.295397);LatLng(55.875744, -4.284668);null
+zoomstart;{"min":0,"sec":3,"mili":752};null;null;LatLng(55.881762, -4.295397);LatLng(55.875744, -4.284668);15
+movestart;{"min":0,"sec":3,"mili":752};null;null;LatLng(55.881762, -4.295397);LatLng(55.875744, -4.284668);null
+zoom;{"min":0,"sec":3,"mili":987};null;null;LatLng(55.880776, -4.288445);LatLng(55.877766, -4.28308);16
+zoomend;{"min":0,"sec":3,"mili":987};null;null;LatLng(55.880776, -4.288445);LatLng(55.877766, -4.28308);16
+moveend;{"min":0,"sec":3,"mili":987};null;null;LatLng(55.880776, -4.288445);LatLng(55.877766, -4.28308);null
