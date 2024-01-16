@@ -4,6 +4,11 @@ L’objectif principal de ce projet d’initiation à la recherche est de concev
 
 ## L'outil de tracking
 
+### Avant d'utiliser le tracker
+
+1. **INSTALLEZ LA DERNIÈRE VERSION DE MAMP**
+2. **Prenez la version 7.4.16 de php**
+
 ### Petit Manuel d'utilisation 
 
   1. Pour commencer à utiliser le tracker cliquer sur le start button (si vous ne cliquez pas dessus, le timer ne se lance pas et rien ne sera enregistré)
@@ -11,6 +16,4 @@ L’objectif principal de ce projet d’initiation à la recherche est de concev
   3. Deux liens s'affichent juste à coté du button pour télécharger les données
   4. Renommez les nom des csv téléchargé à la mano pour éviter de se perdre dans ses fichiers importés
   5. Pour démarrer une nouvelle session il vaut mieux refresh que de ré-appuyer sur le start button pour être plus serein (en vidant le cache au cas ou aussi)
-
-## Le traitement des données
 
