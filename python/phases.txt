@@ -1,0 +1,10 @@
+Phases (de movestart à moveend, ou zoomstart à zoomend):    #zoomstart = movestart , zoomend = moveend = zoom
+    0 : click
+    1 : petit pan
+    2 : gros pan
+    3 : petit pan + élan (simple élan)
+    4 : gros pan + élan
+    5 : petit zoom
+    6 : gros zoom (succession rapide de petits zoom)
+    7 : petit pan long (on parcourt la map et on revient près du point de départ)
+    8 : gros pan long (on parcourt la map et on va assez loin du point de départ)
