@@ -104,7 +104,7 @@ def drawGraphTypeEvents(df):
     plt.show()
 
 
-NAME = 'collegueJbeilin'
+NAME = 'jbeilin'
     
 if __name__ == "__main__":
 
