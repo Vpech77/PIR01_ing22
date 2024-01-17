@@ -115,7 +115,7 @@ function onMapClick(e) {
   let temps = JSON.stringify(dicoTemps);
 
   if (ev.includes(e.type)){
-    resetEventsColor(e.type);
+    //resetEventsColor(e.type);
     track.nbEvents++;
     track.lstEvents.push(e);
     return track.dataEvents.push(createDicoEvent(e, temps));
