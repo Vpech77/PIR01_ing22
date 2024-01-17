@@ -1,4 +1,4 @@
-Phases (de movestart à moveend, ou zoomstart à zoomend):    #zoomstart = movestart , zoomend = moveend = zoom
+Phases (de movestart à moveend)    #zoomstart = movestart , zoomend = moveend = zoom
     0 : click
     1 : petit pan
     2 : gros pan
