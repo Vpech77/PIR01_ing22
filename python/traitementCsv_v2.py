@@ -87,7 +87,7 @@ def drawGraphNivZoomDuration(df_zoom):
     plt.xticks(range(minNiv, maxNiv+1, 1))
 
     plt.xlabel("Niveau de zoom")
-    plt.ylabel("temps de zoom")
+    plt.ylabel("temps de zoom en sec")
 
     plt.savefig("output/durationNivZoom_"+NAME+".png")
     plt.show()
@@ -104,7 +104,7 @@ def drawGraphTypeEvents(df):
     plt.show()
 
 
-NAME = 'jbeilin'
+NAME = 'iamvdo'
     
 if __name__ == "__main__":
 

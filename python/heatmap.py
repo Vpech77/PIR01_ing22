@@ -109,11 +109,11 @@ if __name__ == "__main__":
 
 
     plt.figure()
-    sns.scatterplot(data=df, x="x", y="y")
+    sns.scatterplot(data=df, x="x", y="y", color='grey')
     plt.savefig("output/tracePoint_mouse_"+NAME+".png")
     
     plt.figure()
-    sns.scatterplot(data=df, x="x", y="y")
+    sns.scatterplot(data=df, x="x", y="y", color='grey')
     
     for i in range(len(zoomCoords)):
         df_zoom1 = zoomCoords[i]
@@ -161,11 +161,11 @@ if __name__ == "__main__":
 
 
     plt.figure()
-    sns.scatterplot(data=df, x="xlatLong", y="ylatLong")
+    sns.scatterplot(data=df, x="xlatLong", y="ylatLong", color='grey')
     plt.savefig("output/tracePoint_mouse2_"+NAME+".png")
     
     plt.figure()
-    sns.scatterplot(data=df, x="xlatLong", y="ylatLong")
+    sns.scatterplot(data=df, x="xlatLong", y="ylatLong", color='grey')
     
     for i in range(len(zoomCoords)):
         df_zoom1 = zoomCoords[i]
