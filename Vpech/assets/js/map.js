@@ -63,7 +63,7 @@ let track = Vue.createApp({
     start () {
       this.startTime = Date.now();
 
-      map.on('dblclick click zoom dragstart dragend zoomstart zoomend movestart moveend', onMapClick);
+      map.on('dblclick click zoom dragstart dragend zoomstart zoomend movestart move moveend', onMapClick);
       map.on('mousemove', onMapClick);
       //map.on('move', e => console.log(e))
       document.getElementById("map").addEventListener("wheel", detectTrackPad, true);
@@ -104,7 +104,7 @@ let track = Vue.createApp({
 
 function onMapClick(e) {
 
-  let ev = ['click', 'dblclick', 'zoom', 'dragstart', 'dragend', 'movestart', 'moveend', 'zoomstart', 'zoomend'];
+  let ev = ['click', 'dblclick', 'zoom', 'dragstart', 'dragend', 'movestart', 'move', 'moveend', 'zoomstart', 'zoomend'];
 
   let dicoTemps = {
               min:track.time.minutes,
@@ -132,6 +132,7 @@ function createDicoEvent(e, temps){
   let type = e.type;
   let NOcorner = L.point(0,0);
   let center = L.point(250,250);
+  let trans = e.target._mapPane._leaflet_pos
 
   dico['type'] = type;
 
@@ -145,6 +146,7 @@ function createDicoEvent(e, temps){
   dico['NOcorner'] = 'null';
   dico['center'] = 'null';
   dico['nivZoom'] = 'null';
+  dico['trans'] = 'null';
 
   if (type == 'click' || type == 'dblclick' || type == 'mousemove'){
     dico['posLatLon'] = e.latlng;
@@ -153,6 +155,7 @@ function createDicoEvent(e, temps){
   else{
     dico['NOcorner'] =  map.containerPointToLatLng(NOcorner);
     dico['center'] = map.containerPointToLatLng(center);
+    dico['trans'] = trans;
   
     if (type == 'zoom' || type == 'zoomstart' || type == 'zoomend'){
       dico['nivZoom'] = map.getZoom();
@@ -164,7 +167,7 @@ function createDicoEvent(e, temps){
 }
 
 function resetEventsColor(e){
-  let events = ['click', 'dblclick', 'zoom', 'dragstart', 'dragend', 'movestart', 'moveend', 'zoomstart', 'zoomend'];
+  let events = ['click', 'dblclick', 'zoom', 'dragstart', 'dragend', 'movestart', 'move', 'moveend', 'zoomstart', 'zoomend'];
 
   for (ev of events){
     document.getElementById(ev).classList.remove('rouge');
