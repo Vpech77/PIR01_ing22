@@ -84,7 +84,7 @@ let track = Vue.createApp({
         let csvContentMouse = dicoToFormatCSV(this.dataMouseEvents);
         dataToCSV(csvContentMouse, "mouseMoveEvents");
 
-        map.off('dblclick click zoom dragstart dragend movestart moveend zoomstart zoomend', onMapClick);
+        map.off('dblclick click zoom dragstart dragend movestart move moveend zoomstart zoomend', onMapClick);
         map.off('mousemove', onMapClick);
         document.getElementById("map").removeEventListener("wheel", detectTrackPad, false);
         
