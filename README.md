@@ -6,10 +6,10 @@ L’objectif principal de ce projet d’initiation à la recherche est de concev
 
 ### Avant d'utiliser le tracker
 
-1. **INSTALLEZ LA DERNIÈRE VERSION DE MAMP**
-2. **Prenez la version 7.4.16 de php**
+1. Installez la dernière version de MAMP
+2. Prenez la version 7.4.16 de php
 3. Dans MAMP, cliquez sur l'onglet PREFERENCE puis sur l'onglet Server
-4. Sélectionner pour Document Root le chemin du dossier qui contient le tracker (Vpech)
+4. Sélectionnez pour Document Root le chemin du dossier qui contient le tracker (Vpech)
 5. Sur un navigateur, écrire localhost dans votre barre de recherche
 
 ### Petit Manuel d'utilisation 
