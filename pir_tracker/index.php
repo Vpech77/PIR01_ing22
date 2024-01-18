@@ -12,16 +12,6 @@ Flight::route('/lilia', function () {
 
 });
 
-Flight::route('/proto', function () {
-    Flight::render('proto');
-
-});
-
-Flight::route('/test', function () {
-    Flight::render('test');
-
-});
-
 Flight::start();
 
 ?>
